@@ -1,3 +1,3 @@
 # Keybot
 
-front end of personal portifolio
+front end of my personal portifolio
