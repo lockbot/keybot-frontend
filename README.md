@@ -1,3 +1,3 @@
 # Keybot
 
-front end of my personal portifolio
+front end of KeybotoDev page
