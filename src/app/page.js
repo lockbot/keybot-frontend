@@ -15,7 +15,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            You're&nbspon{' '}
+            You&apos;re on{' '}
             <Image
               src="/penpotFlow/Keybot.Dev.2.svg"
               alt="Keybot.Dev Logo"
