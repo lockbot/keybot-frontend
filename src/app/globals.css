@@ -17,3 +17,28 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+div.blurry-circle::before {
+  transition: width 0.5s ease, height 0.3s ease, opacity 0.8s ease; /* Add transition property with desired duration and easing */
+}
+/* Add media query to adjust the "blurry-circle" element size for larger screens */
+@media (min-width: 400px) and (max-width: 560px) {
+  div.blurry-circle::before {
+    width: 240px;
+    height: 280px;
+    opacity: 0.09;
+  }
+}
+@media (min-width: 560px) and (max-width: 768px) {
+  div.blurry-circle::before {
+    width: 160px;
+    height: 260px;
+    opacity: 0.08;
+  }
+}
+@media (min-width: 768px) {
+  div.blurry-circle::before {
+    width: 80px;
+    height: 240px;
+    opacity: 0.07;
+  }
+}
