@@ -1,20 +1,21 @@
 'use client';
 
 export const closeResume = () => {
-  if (this.props.isMobileView) {
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     window.location.href = '/home';
-  } else {
-    if (localStorage.getItem('rootPageOpen')) {
-      localStorage.removeItem('rootPageOpen');
-      if (window.opener) {
-        window.opener.focus();
-      }
-      window.close();
-    } else if (window.opener && !window.opener.closed) {
+    return;
+  }
+
+  if (localStorage.getItem('rootPageOpen')) {
+    localStorage.removeItem('rootPageOpen');
+    if (window.opener) {
       window.opener.focus();
-      window.close();
-    } else {
-      window.location.href = '/home';
     }
+    window.close();
+  } else if (window.opener && !window.opener.closed) {
+    window.opener.focus();
+    window.close();
+  } else {
+    window.location.href = '/home';
   }
 };

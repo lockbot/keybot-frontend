@@ -1,12 +1,12 @@
 import Image from "next/image";
-import {closeResume} from "@/app/resume/backResume";
+import {closeResume, goToHome} from "@/app/resume/backResume";
 
 export const metadata = {
   title: 'KeybotoDev RESUME',
   description: 'Resumé',
 }
 
-export default function Page() {
+function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -75,15 +75,4 @@ export default function Page() {
   );
 }
 
-export async function getServerSideProps(context) {
-  const UA = context.req.headers['user-agent'];
-  const isMobile = Boolean(UA.match(
-    /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
-  ))
-
-  return {
-    props: {
-      isMobileView: Boolean(isMobile)
-    }
-  }
-}
+export default Page;
