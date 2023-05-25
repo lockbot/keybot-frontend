@@ -39,13 +39,29 @@ export default function Page() {
         height={1370}
       />
 
-      <div className="mt-8 mb-32 grid text-center lg:mb-0 lg:grid-cols-1 lg:text-left">
+      <div className="mt-8 mb-32 grid text-center lg:mb-0 lg:grid-cols-2 lg:text-left">
+        <a
+          href='/resume/RESUME_LucasBorges.pdf'
+          download='RESUME_LucasBorges'
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+                    <span className="inline-block transition-transform group-hover:translate-y-1 motion-reduce:transform-none">
+                        &darr;
+                    </span>
+            {' '}Download
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            Download my Resumé
+          </p>
+        </a>
+
         <a
           onClick={closeResume}
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-                    <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                    <span className="inline-block transition-transform group-hover:translate-x--1 motion-reduce:transform-none">
                         &lt;-
                     </span>
             {' '}HomePage
