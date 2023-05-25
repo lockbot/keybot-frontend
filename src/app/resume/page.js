@@ -74,3 +74,16 @@ export default function Page() {
     </main>
   );
 }
+
+export async function getServerSideProps(context) {
+  const UA = context.req.headers['user-agent'];
+  const isMobile = Boolean(UA.match(
+    /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+  ))
+
+  return {
+    props: {
+      isMobileView: Boolean(isMobile)
+    }
+  }
+}
