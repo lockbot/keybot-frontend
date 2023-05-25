@@ -19,7 +19,7 @@ const nextConfig = {
             },
             {
                 source: '/linkedin',
-                destination: 'https://duckduckgo.com/?q=%5Clucas+borges+developer+keybotodev+linkedin&t=h_&ia=web',
+                destination: 'https://www.linkedin.com/in/lucas-borges-vieira/',
                 permanent: true,
             },
         ];
