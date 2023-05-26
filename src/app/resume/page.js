@@ -2,8 +2,8 @@ import Image from "next/image";
 import {RenderPDFAndButtonBasedOnDevice} from "@/app/resume/deviceRendererResume";
 
 export const metadata = {
-  title: 'KeybotoDev RESUME',
-  description: 'Resumé',
+  title: 'Lucas Borges RÉSUMÉ',
+  description: 'RÉSUMÉ',
 }
 
 function Resume() {
