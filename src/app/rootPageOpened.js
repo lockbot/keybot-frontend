@@ -1,17 +1,23 @@
 'use client';
 
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 
 export function OpenRoot() {
-  useEffect(() => {
-    window.onbeforeunload = () => {
-      if (localStorage.getItem('rootPageOpen')) {
-        localStorage.removeItem('rootPageOpen');
-      }
-    };
+  const [isMobile, setIsMobile] = useState(true);
 
-    return () => {
-      window.onbeforeunload = null;
-    };
-  }, []);
+  useEffect(() => {
+    setIsMobile(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+
+    if (!isMobile) {
+      window.onbeforeunload = () => {
+        if (localStorage.getItem('rootPageOpen')) {
+          localStorage.removeItem('rootPageOpen');
+        }
+      };
+
+      return () => {
+        window.onbeforeunload = null;
+      };
+    }
+  }, [isMobile]);
 }
