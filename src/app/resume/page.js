@@ -1,12 +1,12 @@
 import Image from "next/image";
-import {closeResume, goToHome} from "@/app/resume/backResume";
+import {RenderPDFAndButtonBasedOnDevice} from "@/app/resume/deviceRendererResume";
 
 export const metadata = {
   title: 'KeybotoDev RESUME',
   description: 'Resumé',
 }
 
-function Page() {
+function Resume() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -32,47 +32,9 @@ function Page() {
           </div>
         </div>
       </div>
-
-      <iframe
-        src='/resume/RESUME_LucasBorges.pdf'
-        width={1050}
-        height={1370}
-      />
-
-      <div className="mt-8 mb-32 grid text-center lg:mb-0 lg:grid-cols-2 lg:text-left">
-        <a
-          href='/resume/RESUME_LucasBorges.pdf'
-          download='RESUME_LucasBorges'
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-                    <span className="inline-block transition-transform group-hover:translate-y-1 motion-reduce:transform-none">
-                        &darr;
-                    </span>
-            {' '}Download
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Download my Resumé
-          </p>
-        </a>
-
-        <a
-          onClick={closeResume}
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-                    <span className="inline-block transition-transform group-hover:translate-x--1 motion-reduce:transform-none">
-                        &lt;-
-                    </span>
-            {' '}HomePage
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Back to HomePage
-          </p>
-        </a>
-      </div>
+      <RenderPDFAndButtonBasedOnDevice />
     </main>
   );
 }
 
-export default Page;
+export default Resume;
