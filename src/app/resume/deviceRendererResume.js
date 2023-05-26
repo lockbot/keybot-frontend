@@ -12,7 +12,7 @@ export function RenderPDFAndButtonBasedOnDevice() {
   if( isMobile ) {
     return (
       <>
-        <div className="mb-32 text-center lg:mb-0 lg:text-left blurry-circle relative flex flex-col place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky after:to-green-900 after:blur-2xl after:content-[''] before:bg-gradient-to-br before:to-blue-900 before:opacity-10 after:from-sky-900 after:via-[#01ff81] before:from-[#00418848] before:via-[#0161ff] after:opacity-40 before:lg:h-[360px]">
+        <div className="text-center lg:mb-0 lg:text-left blurry-circle relative flex flex-col place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky after:to-green-900 after:blur-2xl after:content-[''] before:bg-gradient-to-br before:to-blue-900 before:opacity-10 after:from-sky-900 after:via-[#01ff81] before:from-[#00418848] before:via-[#0161ff] after:opacity-40 before:lg:h-[360px]">
           <a
             href='/resume/RESUME_LucasBorges.pdf'
             download='RESUME_LucasBorges'
@@ -50,6 +50,7 @@ export function RenderPDFAndButtonBasedOnDevice() {
     return (
       <>
         <iframe
+          className="mt-8 lg:rounded-xl lg:border lg:border-neutral-800 lg:shadow-lg"
           src='/resume/RESUME_LucasBorges.pdf'
           width={1050}
           height={1370}
