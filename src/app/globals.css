@@ -22,6 +22,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+a:hover {
+  cursor:pointer;
+}
+
 div.blurry-circle::after {
   opacity: 0.16;
   transition: opacity 0.8s ease;
