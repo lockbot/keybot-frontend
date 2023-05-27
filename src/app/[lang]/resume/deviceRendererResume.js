@@ -3,7 +3,7 @@
 import {closeResume} from "/src/app/[lang]/resume/backResume";
 import {useEffect, useState} from "react";
 
-export async function RenderPDFAndButtonBasedOnDevice({download, downloadMessage, cv, home, homeMessage}) {
+export function RenderPDFAndButtonBasedOnDevice({download, downloadMessage, cv, home, homeMessage}) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect( () => {
