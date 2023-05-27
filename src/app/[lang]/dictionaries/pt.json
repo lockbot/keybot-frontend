@@ -1,0 +1,33 @@
+{
+  "top_labels": {
+    "where": "Você está em"
+  },
+  "main_button": {
+    "back_home": {
+        "name1": "Início",
+        "name2": "página inicial",
+        "message": "Voltar para a"
+    },
+    "github": {
+      "name1": "GitHub",
+      "name2": "GitHub",
+      "message": "Confira meu"
+    },
+    "gitlab": {
+      "name1": "GitLab",
+      "name2": "GitLab",
+      "message": "Confira meu"
+    },
+    "linkedin": {
+      "name1": "LinkedIn",
+      "name2": "LinkedIn",
+      "message": "Conecte-se comigo no"
+    },
+    "resume": {
+      "name1": "CURRÍCULO",
+      "name2": "curriculum vitae",
+      "message": "Baixe meu",
+      "download": "Baixar"
+    }
+  }
+}

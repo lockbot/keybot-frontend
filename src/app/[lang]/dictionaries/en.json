@@ -1,0 +1,33 @@
+{
+  "top_labels": {
+    "where": "You're on"
+  },
+  "main_button": {
+    "back_home": {
+      "name1": "HomePage",
+      "name2": "home page",
+      "message": "Back to"
+    },
+    "github": {
+      "name1": "GitHub",
+      "name2": "GitHub",
+      "message": "Checkout my"
+    },
+    "gitlab": {
+      "name1": "GitLab",
+      "name2": "GitLab",
+      "message": "Checkout my"
+    },
+    "linkedin": {
+      "name1": "LinkedIn",
+      "name2": "LinkedIn",
+      "message": "Connect with me on"
+    },
+    "resume": {
+      "name1": "RÉSUMÉ",
+      "name2": "résumé",
+      "message": "Download my",
+      "download": "Download"
+    }
+  }
+}

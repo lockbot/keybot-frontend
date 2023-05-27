@@ -2,7 +2,7 @@
 
 export const closeResume = () => {
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    window.location.href = '/home';
+    window.location.href = `/home`;
     return;
   }
 
@@ -16,6 +16,6 @@ export const closeResume = () => {
     window.opener.focus();
     window.close();
   } else {
-    window.location.href = '/home';
+    window.location.href = `/home`;
   }
 };
