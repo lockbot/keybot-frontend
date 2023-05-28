@@ -1,6 +1,7 @@
 {
+  "lang": "pt",
   "top_labels": {
-    "lang": "Idioma",
+    "lang": "idioma",
     "where": "Você está em"
   },
   "main_button": {
@@ -25,7 +26,7 @@
       "message": "Conecte-se comigo no"
     },
     "resume": {
-      "name1": "CURRÍCULO",
+      "name1": "Currículo",
       "name2": "curriculum vitae",
       "message": "Baixe meu",
       "download": "Baixar"
