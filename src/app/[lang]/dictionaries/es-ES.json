@@ -1,0 +1,36 @@
+{
+  "lang": "es-ES",
+  "flag": "ES",
+  "top_labels": {
+    "lang": "idioma",
+    "where": "Estás en"
+  },
+  "main_button": {
+    "back_home": {
+      "name1": "Página de inicio",
+      "name2": "página de inicio",
+      "message": "Volver a"
+    },
+    "github": {
+      "name1": "GitHub",
+      "name2": "GitHub",
+      "message": "Mira mi"
+    },
+    "gitlab": {
+      "name1": "GitLab",
+      "name2": "GitLab",
+      "message": "Mira mi"
+    },
+    "linkedin": {
+      "name1": "LinkedIn",
+      "name2": "LinkedIn",
+      "message": "Conéctate conmigo en"
+    },
+    "resume": {
+      "name1": "Currículum",
+      "name2": "currículum",
+      "message": "Descarga mi",
+      "download": "Descargar"
+    }
+  }
+}

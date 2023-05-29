@@ -1,6 +1,6 @@
 'use client';
 
-import {closeResume} from "/src/app/[lang]/resume/backResume";
+import {closeResume} from "/src/app/[lang]/resume/components/backResume";
 import {useEffect, useState} from "react";
 
 export function RenderPDFAndButtonBasedOnDevice({download, downloadMessage, cv, home, homeMessage}) {

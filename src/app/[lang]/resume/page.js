@@ -1,7 +1,7 @@
 import Image from "next/image";
-import {RenderPDFAndButtonBasedOnDevice} from "/src/app/[lang]/resume/deviceRendererResume";
+import {RenderPDFAndButtonBasedOnDevice} from "/src/app/[lang]/resume/components/deviceRendererResume";
 import {getDictionary} from "/src/app/[lang]/dictionaries";
-import SwitchLocale from "../components/switch-locale";
+import SwitchLocale from "../components/switchLocale";
 
 export const metadata = {
   title: 'Lucas Borges RÉSUMÉ',

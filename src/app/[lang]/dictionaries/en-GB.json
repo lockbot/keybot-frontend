@@ -1,24 +1,25 @@
 {
-  "lang": "en",
+  "lang": "en-GB",
+  "flag": "GB",
   "top_labels": {
     "lang": "language",
-    "where": "You're on"
+    "where": "You are in"
   },
   "main_button": {
     "back_home": {
-      "name1": "HomePage",
+      "name1": "Home Page",
       "name2": "home page",
-      "message": "Back to"
+      "message": "Back to the"
     },
     "github": {
       "name1": "GitHub",
       "name2": "GitHub",
-      "message": "Checkout my"
+      "message": "Visit my"
     },
     "gitlab": {
       "name1": "GitLab",
       "name2": "GitLab",
-      "message": "Checkout my"
+      "message": "Visit my"
     },
     "linkedin": {
       "name1": "LinkedIn",

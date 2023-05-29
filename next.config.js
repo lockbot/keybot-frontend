@@ -8,6 +8,26 @@ const nextConfig = {
                 permanent: true,
             },
             {
+                source: '/en',
+                destination: '/en-US',
+                permanent: false,
+            },
+            {
+                source: '/pt',
+                destination: '/pt-BR',
+                permanent: false,
+            },
+            {
+                source: '/en/resume',
+                destination: '/en-US/resume',
+                permanent: false,
+            },
+            {
+                source: '/pt/resume',
+                destination: '/pt-BR/resume',
+                permanent: false,
+            },
+            {
                 source: '/github',
                 destination: 'https://github.com/lockbot',
                 permanent: true,

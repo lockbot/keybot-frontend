@@ -22,7 +22,7 @@ export function middleware(request) {
 
     // Redirect if there is no locale
     if (pathnameIsMissingLocale) {
-        const locale = getLocale(request)
+        const locale = request.cookies.get('NEXT_LOCALE')?.value || getLocale(request)
 
         // e.g. incoming request is /products
         // The new URL is now /en-US/products
