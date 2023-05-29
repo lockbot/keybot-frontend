@@ -1,0 +1,36 @@
+{
+  "lang": "nl-NL",
+  "flag": "NL",
+  "top_labels": {
+    "lang": "taal",
+    "where": "Je bent op"
+  },
+  "main_button": {
+    "back_home": {
+      "name1": "HomePagina",
+      "name2": "home pagina",
+      "message": "Terug naar"
+    },
+    "github": {
+      "name1": "GitHub",
+      "name2": "GitHub",
+      "message": "Bekijk mijn"
+    },
+    "gitlab": {
+      "name1": "GitLab",
+      "name2": "GitLab",
+      "message": "Bekijk mijn"
+    },
+    "linkedin": {
+      "name1": "LinkedIn",
+      "name2": "LinkedIn",
+      "message": "Verbind met mij op"
+    },
+    "resume": {
+      "name1": "CV",
+      "name2": "cv",
+      "message": "Download mijn",
+      "download": "Download"
+    }
+  }
+}

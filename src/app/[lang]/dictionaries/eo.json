@@ -1,0 +1,36 @@
+{
+  "lang": "eo",
+  "flag": "EO",
+  "top_labels": {
+      "lang": "lingvo",
+      "where": "Vi estas"
+  },
+  "main_button": {
+    "back_home": {
+      "name1": "Ĉefpaĝo",
+      "name2": "ĉefpaĝo",
+      "message": "Reen al"
+    },
+    "github": {
+      "name1": "GitHub",
+      "name2": "GitHub",
+      "message": "Rigardu mian"
+    },
+    "gitlab": {
+      "name1": "GitLab",
+      "name2": "GitLab",
+      "message": "Rigardu mian"
+    },
+    "linkedin": {
+      "name1": "LinkedIn",
+      "name2": "LinkedIn",
+      "message": "Konekti kun mi ĉe"
+    },
+    "resume": {
+      "name1": "Levilo",
+      "name2": "levilo",
+      "message": "Elŝutu mian",
+      "download": "Elŝuti"
+    }
+  }
+}

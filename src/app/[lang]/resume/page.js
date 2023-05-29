@@ -25,7 +25,7 @@ export default async function Resume({ params: { lang } }) {
           >
             {dict.top_labels.where}{' '}
             <Image
-              src="/penpotFlow/Keybot.Dev.2.svg"
+              src="/img/penpotFlow/Keybot.Dev.2.svg"
               alt="Keybot.Dev Logo"
               className="invert"
               width={100}

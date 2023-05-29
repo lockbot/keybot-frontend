@@ -21,24 +21,32 @@ export default function SwitchLocale({currentLang, langQuery}) {
     return segments.join('/')
   }
 
+  let delay = -100;
+  let delay_step = 100;
+
   return (
-    <div className="font-mono text-center lg_mt--10 rounded-lg border border-transparent px-0.5 py-2 transition-color hover:border-neutral-700 hover:bg-neutral-800/30">
+    <div>
       <Menu>
-        <Menu.Button>{langQuery}</Menu.Button>
-        <Transition
-          enter="transition duration-100 ease-out"
-          enterFrom="transform scale-95 opacity-0"
-          enterTo="transform scale-100 opacity-100"
-          leave="transition duration-75 ease-out"
-          leaveFrom="transform scale-100 opacity-100"
-          leaveTo="transform scale-95 opacity-0"
-        >
+        <Menu.Button className="flex font-mono text-center relative rounded-lg border border-transparent px-0.5 py-2 transition-color hover:border-neutral-700 hover:bg-neutral-800/30">
+          {langQuery}:&nbsp;<RenderFlag locale={currentLang} />
+        </Menu.Button>
+        <Transition>
           <Menu.Items className="flex flex-col">
-            {i18n.locales.map((locale) => (
-              <React.Fragment key={locale}>
+            {i18n.locales.map((locale) => {
+              delay += currentLang !== locale ? delay_step : 0;
+              const transitionDelay = `${delay}ms`;
+              return (<React.Fragment key={locale}>
                 {
                   currentLang !== locale
                     ?
+                  <Transition.Child style={{transitionDelay}}
+                    enter="transition duration-1000 ease-out"
+                    enterFrom="transform translate-x-1/3 opacity-0"
+                    enterTo="transform scale-100 opacity-1"
+                    leave="transition duration-500 ease-out"
+                    leaveFrom="transform scale-100 opacity-1"
+                    leaveTo="transform scale-95 opacity-0"
+                  >
                     <Menu.Item>
                       <a
                         href={redirectedPathName(locale)}
@@ -48,11 +56,12 @@ export default function SwitchLocale({currentLang, langQuery}) {
                         <RenderFlag locale={locale} /> {locale}
                       </a>
                     </Menu.Item>
+                  </Transition.Child>
                     :
-                    <></>
+                  <></>
                 }
-              </React.Fragment>
-            ))}
+              </React.Fragment>);
+            })}
           </Menu.Items>
         </Transition>
       </Menu>

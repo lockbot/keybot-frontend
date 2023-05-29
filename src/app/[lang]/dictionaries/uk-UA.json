@@ -1,0 +1,36 @@
+{
+  "lang": "uk-UA",
+  "flag": "UA",
+  "top_labels": {
+    "lang": "мова",
+    "where": "Ви знаходитесь на"
+  },
+  "main_button": {
+    "back_home": {
+      "name1": "Головна",
+      "name2": "головну",
+      "message": "Повернутися на"
+    },
+    "github": {
+      "name1": "GitHub",
+      "name2": "GitHub",
+      "message": "Перевірити мій"
+    },
+    "gitlab": {
+      "name1": "GitLab",
+      "name2": "GitLab",
+      "message": "Перевірити мій"
+    },
+    "linkedin": {
+      "name1": "LinkedIn",
+      "name2": "LinkedIn",
+      "message": "Зв'яжіться зі мною на"
+    },
+    "resume": {
+      "name1": "Резюме",
+      "name2": "резюме",
+      "message": "Завантажити моє",
+      "download": "Завантажити"
+    }
+  }
+}

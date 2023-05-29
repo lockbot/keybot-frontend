@@ -1,0 +1,36 @@
+{
+  "lang": "ko-KR",
+  "flag": "KR",
+  "top_labels": {
+    "lang": "언어",
+    "where": "현재 위치"
+  },
+  "main_button": {
+    "back_home": {
+      "name1": "홈페이지",
+      "name2": "홈페이지",
+      "message": "돌아가기"
+    },
+    "github": {
+      "name1": "깃허브",
+      "name2": "깃허브",
+      "message": "깃허브에서"
+    },
+    "gitlab": {
+      "name1": "깃랩",
+      "name2": "깃랩",
+      "message": "깃랩에서"
+    },
+    "linkedin": {
+      "name1": "링크드인",
+      "name2": "링크드인",
+      "message": "링크드인에서"
+    },
+    "resume": {
+      "name1": "이력서",
+      "name2": "이력서",
+      "message": "이력서 다운로드",
+      "download": "다운로드"
+    }
+  }
+}

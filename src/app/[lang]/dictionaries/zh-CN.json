@@ -1,0 +1,36 @@
+{
+  "lang": "zh-CN",
+  "flag": "CN",
+  "top_labels": {
+    "lang": "语言",
+    "where": "你在"
+  },
+  "main_button": {
+    "back_home": {
+      "name1": "主页",
+      "name2": "主页",
+      "message": "回到"
+    },
+    "github": {
+      "name1": "GitHub",
+      "name2": "GitHub",
+      "message": "查看我的"
+    },
+    "gitlab": {
+      "name1": "GitLab",
+      "name2": "GitLab",
+      "message": "查看我的"
+    },
+    "linkedin": {
+      "name1": "LinkedIn 领英",
+      "name2": "领英",
+      "message": "在"
+    },
+    "resume": {
+      "name1": "简历",
+      "name2": "简历",
+      "message": "下载我的",
+      "download": "下载"
+    }
+  }
+}

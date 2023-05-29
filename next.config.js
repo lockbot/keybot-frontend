@@ -18,6 +18,11 @@ const nextConfig = {
                 permanent: false,
             },
             {
+                source: '/es',
+                destination: '/es-ES',
+                permanent: false,
+            },
+            {
                 source: '/en/resume',
                 destination: '/en-US/resume',
                 permanent: false,
@@ -25,6 +30,11 @@ const nextConfig = {
             {
                 source: '/pt/resume',
                 destination: '/pt-BR/resume',
+                permanent: false,
+            },
+            {
+                source: '/es/resume',
+                destination: '/es-ES/resume',
                 permanent: false,
             },
             {

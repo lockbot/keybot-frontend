@@ -1,0 +1,36 @@
+{
+  "lang": "ja-JP",
+  "flag": "JP",
+  "top_labels": {
+    "lang": "言語",
+    "where": "ここは"
+  },
+  "main_button": {
+    "back_home": {
+      "name1": "ホームページ",
+      "name2": "ホームページ",
+      "message": "戻る"
+    },
+    "github": {
+      "name1": "GitHub",
+      "name2": "GitHub",
+      "message": "私の"
+    },
+    "gitlab": {
+      "name1": "GitLab",
+      "name2": "GitLab",
+      "message": "私の"
+    },
+    "linkedin": {
+      "name1": "LinkedIn",
+      "name2": "LinkedIn",
+      "message": "私とつながる"
+    },
+    "resume": {
+      "name1": "履歴書",
+      "name2": "履歴書",
+      "message": "ダウンロード",
+      "download": "ダウンロード"
+    }
+  }
+}

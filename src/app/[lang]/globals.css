@@ -8,13 +8,6 @@
   --background-end-rgb: 0, 0, 0;
 }
 
-@media (min-width: 1024px) {
-  div.lg_mt--10 {
-    margin-top: -6%;
-    z-index: 15;
-  }
-}
-
 .group:hover .group-hover\:translate-x--1 {
     transform: translateX(-15%) translateX(0);
 }

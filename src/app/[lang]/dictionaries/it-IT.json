@@ -1,0 +1,36 @@
+{
+  "lang": "it-IT",
+  "flag": "IT",
+  "top_labels": {
+    "lang": "lingua",
+    "where": "Sei in"
+  },
+  "main_button": {
+    "back_home": {
+      "name1": "Home page",
+      "name2": "home page",
+      "message": "Torna alla"
+    },
+    "github": {
+      "name1": "GitHub",
+      "name2": "GitHub",
+      "message": "Guarda il mio"
+    },
+    "gitlab": {
+      "name1": "GitLab",
+      "name2": "GitLab",
+      "message": "Guarda il mio"
+    },
+    "linkedin": {
+      "name1": "LinkedIn",
+      "name2": "LinkedIn",
+      "message": "Connettiti con me su"
+    },
+    "resume": {
+      "name1": "Curriculum",
+      "name2": "curriculum",
+      "message": "Scarica il mio",
+      "download": "Scarica"
+    }
+  }
+}
