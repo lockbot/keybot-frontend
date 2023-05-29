@@ -39,7 +39,7 @@ export default async function Home({params: {lang}}) {
       <span className="p-8 lg:p-0" />
 
       <div className="absolute z-30 pt-3 lg:p-6">
-        <SwitchLocale currentLang={dict.lang} langQuery={dict.top_labels.lang} />
+        <SwitchLocale dict={dict} />
       </div>
 
       <section

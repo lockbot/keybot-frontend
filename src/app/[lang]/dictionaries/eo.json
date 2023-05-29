@@ -1,9 +1,10 @@
 {
   "lang": "eo",
   "flag": "EO",
+  "resume": "/files/resume/RESUME_LucasBorges.pdf",
   "top_labels": {
       "lang": "lingvo",
-      "where": "Vi estas"
+      "where": "Vi estas en"
   },
   "main_button": {
     "back_home": {
@@ -27,8 +28,8 @@
       "message": "Konekti kun mi ĉe"
     },
     "resume": {
-      "name1": "Levilo",
-      "name2": "levilo",
+      "name1": "Vivresumo",
+      "name2": "vivresumon",
       "message": "Elŝutu mian",
       "download": "Elŝuti"
     }

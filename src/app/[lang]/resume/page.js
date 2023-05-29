@@ -36,13 +36,7 @@ export default async function Resume({ params: { lang } }) {
         </div>
       </section>
 
-      <RenderPDFAndButtonBasedOnDevice
-        download={dict.main_button.resume.download}
-        downloadMessage={dict.main_button.resume.message}
-        cv={dict.main_button.resume.name2}
-        home={dict.main_button.back_home.name1}
-        homeMessage={dict.main_button.back_home.message+" "+dict.main_button.back_home.name2}
-      />
+      <RenderPDFAndButtonBasedOnDevice dict={dict} />
     </main>
   );
 };

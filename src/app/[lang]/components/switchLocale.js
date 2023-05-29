@@ -11,7 +11,7 @@ const changeLocaleCookie = (locale) => {
 }
 
 
-export default function SwitchLocale({currentLang, langQuery}) {
+export default function SwitchLocale({dict}) {
   const pathName = usePathname()
 
   const redirectedPathName = (locale) => {
@@ -27,17 +27,17 @@ export default function SwitchLocale({currentLang, langQuery}) {
   return (
     <div>
       <Menu>
-        <Menu.Button className="flex font-mono text-center relative rounded-lg border border-transparent px-0.5 py-2 transition-color hover:border-neutral-700 hover:bg-neutral-800/30">
-          {langQuery}:&nbsp;<RenderFlag locale={currentLang} />
+        <Menu.Button className="flex font-mono items-center justify-center rounded-lg border border-transparent px-0.5 py-2 transition-color hover:border-neutral-700 hover:bg-neutral-800/30">
+          {dict.top_labels.lang}:&nbsp;<RenderFlag locale={dict.lang} />
         </Menu.Button>
         <Transition>
           <Menu.Items className="flex flex-col">
             {i18n.locales.map((locale) => {
-              delay += currentLang !== locale ? delay_step : 0;
+              delay += dict.lang !== locale ? delay_step : 0;
               const transitionDelay = `${delay}ms`;
               return (<React.Fragment key={locale}>
                 {
-                  currentLang !== locale
+                  dict.lang !== locale
                     ?
                   <Transition.Child style={{transitionDelay}}
                     enter="transition duration-1000 ease-out"
@@ -51,7 +51,7 @@ export default function SwitchLocale({currentLang, langQuery}) {
                       <a
                         href={redirectedPathName(locale)}
                         onClick={() => changeLocaleCookie(locale)}
-                        className="flex items-center justify-center rounded-lg border border-transparent px-3 py-2 transition-color hover:border-neutral-700 hover:bg-neutral-800/30"
+                        className="flex items-center justify-between rounded-lg border border-transparent px-3 py-2 transition-color hover:border-neutral-700 hover:bg-neutral-800/30"
                       >
                         <RenderFlag locale={locale} /> {locale}
                       </a>

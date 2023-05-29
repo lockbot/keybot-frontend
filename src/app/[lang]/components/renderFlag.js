@@ -20,19 +20,16 @@ export default function RenderFlag({locale}) {
         <Image
           src="/img/flags/esperanto-flago.svg"
           alt="Esperanto-flago."
-          className="mr-2"
-          width={24}
-          height={8}
-          priority
+          width={30}
+          height={18}
         />
       )
     default:
       return (
         <Flag
           code={dict.flag}
-          className="mr-2"
-          width={24}
-          height={8}
+          width={30}
+          height={18}
         />
       )
   }
