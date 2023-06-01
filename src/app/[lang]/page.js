@@ -54,21 +54,20 @@ export default async function Home({params: {lang}}) {
         />
       </section>
 
-      <section className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
+      <section className="mb-32 grid text-center lg:mb-0 lg:grid-cols-3 lg:text-left">
+
         <a
-          href="/github"
+          onClick={openResume}
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            {dict.main_button.github.name1}{' '}
+            <i>{dict.main_button.resume.name1}{' '}</i>
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            {dict.main_button.github.message} {dict.main_button.github.name2}.
+            {dict.main_button.resume.message} <i>{dict.main_button.resume.name2}</i>.
           </p>
         </a>
 
@@ -90,17 +89,36 @@ export default async function Home({params: {lang}}) {
         </a>
 
         <a
-          onClick={openResume}
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
+          href="https://keybotodev.wordpress.com/"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-color hover:border-neutral-700 hover:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            <i>{dict.main_button.resume.name1}{' '}</i>
+            Blog{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            {dict.main_button.resume.message} <i>{dict.main_button.resume.name2}</i>.
+            Blog.
+          </p>
+        </a>
+
+        <a
+          href="/github"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            {dict.main_button.github.name1}{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            {dict.main_button.github.message} {dict.main_button.github.name2}.
           </p>
         </a>
 
