@@ -12,13 +12,13 @@ export function RenderPDFAndButtonBasedOnDevice({dict}) {
 
   if( isMobile ) {
     return (
-      <object
-        className="mt-8 rounded-xl border border-neutral-800 shadow-lg ml--10"
-        type="text/html"
-        data={dict.resume+".html"}
-        width={834}
-        height={1050}
-      />
+        <object
+          className="mt-8 ml--6 rounded-xl lg:border border-neutral-800 shadow-lg"
+          type="text/html"
+          data={dict.resume+".html"}
+          width={850}
+          height={1060}
+        />
     );
   } else {
     return (
@@ -26,7 +26,7 @@ export function RenderPDFAndButtonBasedOnDevice({dict}) {
         className="mt-8 rounded-xl lg:border border-neutral-800 shadow-lg"
         src={dict.resume+".pdf"}
         width={1050}
-        height={1324}
+        height={1364}
       />
     );
   }
