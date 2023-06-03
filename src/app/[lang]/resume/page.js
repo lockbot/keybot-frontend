@@ -2,6 +2,7 @@ import Image from "next/image";
 import {RenderPDFAndButtonBasedOnDevice} from "/src/app/[lang]/resume/components/deviceRendererResume";
 import {getDictionary} from "/src/app/[lang]/dictionaries";
 import SwitchLocale from "../components/switchLocale";
+import {closeResume} from "./components/backResume";
 
 export const metadata = {
   title: 'Lucas Borges RÉSUMÉ',
@@ -36,7 +37,42 @@ export default async function Resume({ params: { lang } }) {
         </div>
       </section>
 
-      <RenderPDFAndButtonBasedOnDevice dict={dict} />
+      <section className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+        <RenderPDFAndButtonBasedOnDevice dict={dict} />
+      </section>
+
+      <section className="mt-8 mb-32 grid text-center lg:mb-0 lg:grid-cols-2 lg:text-left">
+        <a
+          href={dict.resume}
+          download='RESUME_LucasBorges'
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+              <span className="inline-block transition-transform group-hover:translate-y-1 motion-reduce:transform-none">
+                  &darr;
+              </span>
+            {' '}{dict.main_button.resume.download}
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            {dict.main_button.resume.message} <i>{dict.main_button.resume.name2}</i>.
+          </p>
+        </a>
+
+        <a
+          onClick={closeResume}
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+              <span className="inline-block transition-transform group-hover:translate-x--1 motion-reduce:transform-none">
+                  &lt;-
+              </span>
+            {' '}{dict.main_button.back_home.name1}
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            {dict.main_button.back_home.message} {dict.main_button.back_home.name2}.
+          </p>
+        </a>
+      </section>
     </main>
   );
 };
