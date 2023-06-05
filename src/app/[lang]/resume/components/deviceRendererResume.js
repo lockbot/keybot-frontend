@@ -43,8 +43,8 @@ export function RenderResumeBasedOnDevice({dict}) {
             <object
               type="text/html"
               data={dict.resume+".html"}
-              width={800}
-              height={966}
+              width={850}
+              height={1016}
             />
           </div>
         </section>
