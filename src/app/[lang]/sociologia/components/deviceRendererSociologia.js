@@ -1,10 +1,9 @@
 'use client';
 
 import Image from "next/image";
-import {closeResume} from "/src/app/[lang]/resume/components/backResume";
 import {useEffect, useState} from "react";
 
-export function RenderResumeBasedOnDevice({dict}) {
+export function RenderSociologiaBasedOnDevice({dict}) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect( () => {
@@ -42,14 +41,14 @@ export function RenderResumeBasedOnDevice({dict}) {
           <div className="overflow-x-scroll mt-8 -mx-24 rounded-xl border-gray-500 shadow-lg">
             <object
               type="text/html"
-              data={dict.resume+".html"}
+              data={"/files/resume/cs/CV_LucasBorgesVieira.html"}
               width={850}
               height={1016}
             />
           </div>
         </section>
 
-        <section className="mt-8 mb-32 grid text-center lg:mb-0 lg:grid-cols-2 lg:text-left">
+        <section className="mt-8 mb-32 grid text-center lg:mb-0 lg:grid-cols-1 lg:text-left">
           <a
             href={dict.resume}
             download='RESUME_LucasBorges'
@@ -63,21 +62,6 @@ export function RenderResumeBasedOnDevice({dict}) {
             </h2>
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
               {dict.main_button.resume.message} <i>{dict.main_button.resume.name2}</i>.
-            </p>
-          </a>
-
-          <a
-            onClick={closeResume}
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
-          >
-            <h2 className={`mb-3 text-2xl font-semibold`}>
-              <span className="inline-block transition-transform group-hover:translate-x--1 motion-reduce:transform-none">
-                  &lt;-
-              </span>
-              {' '}{dict.main_button.back_home.name1}
-            </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              {dict.main_button.back_home.message} {dict.main_button.back_home.name2}.
             </p>
           </a>
         </section>
@@ -114,7 +98,7 @@ export function RenderResumeBasedOnDevice({dict}) {
           <div className="overflow-x-scroll lg:overflow-x-clip mt-8 -mx-24 lg:border lg:mx-0 border-neutral-800 shadow-lg">
             <iframe
               className="rounded-xl"
-              src={dict.resume+".pdf"}
+              src={"/files/resume/cs/CV_LucasBorgesVieira.pdf"}
               width={1050}
               height={1376}
             />
@@ -135,21 +119,6 @@ export function RenderResumeBasedOnDevice({dict}) {
             </h2>
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
               {dict.main_button.resume.message} <i>{dict.main_button.resume.name2}</i>.
-            </p>
-          </a>
-
-          <a
-            onClick={closeResume}
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
-          >
-            <h2 className={`mb-3 text-2xl font-semibold`}>
-              <span className="inline-block transition-transform group-hover:translate-x--1 motion-reduce:transform-none">
-                  &lt;-
-              </span>
-              {' '}{dict.main_button.back_home.name1}
-            </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              {dict.main_button.back_home.message} {dict.main_button.back_home.name2}.
             </p>
           </a>
         </section>

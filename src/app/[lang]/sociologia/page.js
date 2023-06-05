@@ -1,9 +1,9 @@
-import {RenderResumeBasedOnDevice} from "/src/app/[lang]/resume/components/deviceRendererResume";
+import {RenderSociologiaBasedOnDevice} from "./components/deviceRendererSociologia";
 import {getDictionary} from "/src/app/[lang]/dictionaries";
 
 export const metadata = {
-  title: 'Lucas Borges RÉSUMÉ',
-  description: 'RÉSUMÉ',
+  title: 'Lucas Borges Currículo',
+  description: 'Currículo',
 }
 
 export default async function Resume({ params: { lang } }) {
@@ -11,7 +11,7 @@ export default async function Resume({ params: { lang } }) {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
 
-      <RenderResumeBasedOnDevice dict={dict} />
+      <RenderSociologiaBasedOnDevice dict={dict} />
 
     </main>
   );
