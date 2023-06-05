@@ -43,7 +43,7 @@ export function RenderSociologiaBasedOnDevice({dict}) {
               type="text/html"
               data={"/files/resume/cs/CV_LucasBorgesVieira.html"}
               width={850}
-              height={1066}
+              height={1096}
             />
           </div>
         </section>
