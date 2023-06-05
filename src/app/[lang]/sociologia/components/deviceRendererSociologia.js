@@ -18,7 +18,7 @@ export function RenderSociologiaBasedOnDevice({dict}) {
             keybot
             <code className="font-mono font-bold">•</code>
             dev
-            <code className="font-mono font-bold">.br/resume</code>
+            <code className="font-mono font-bold">.br/sociologia</code>
           </div>
           <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-black via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
             <div
@@ -43,7 +43,7 @@ export function RenderSociologiaBasedOnDevice({dict}) {
               type="text/html"
               data={"/files/resume/cs/CV_LucasBorgesVieira.html"}
               width={850}
-              height={1016}
+              height={1066}
             />
           </div>
         </section>
@@ -75,7 +75,7 @@ export function RenderSociologiaBasedOnDevice({dict}) {
             keybot
             <code className="font-mono font-bold">•</code>
             dev
-            <code className="font-mono font-bold">.br/resume</code>
+            <code className="font-mono font-bold">.br/sociologia</code>
           </div>
           <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-black via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
             <div
