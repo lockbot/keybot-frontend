@@ -26,10 +26,6 @@ a:hover {
   cursor:pointer;
 }
 
-.ml--6 {
-    margin-inline-start: -6rem;
-}
-
 section.blurry-circle::after {
   opacity: 0.16;
   transition: opacity 0.8s ease;

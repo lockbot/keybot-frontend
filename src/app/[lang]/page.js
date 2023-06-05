@@ -10,7 +10,7 @@ export default async function Home({params: {lang}}) {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <OpenRoot/>
-      <section className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+      <section className="z-20 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <div
           className="fixed left-0 top-0 flex w-full justify-center border-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl border-neutral-800 bg-zinc-800/30 lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:bg-zinc-800/30">
           keybot
@@ -38,12 +38,12 @@ export default async function Home({params: {lang}}) {
 
       <span className="p-8 lg:p-0" />
 
-      <div className="absolute z-30 pt-3 lg:p-6">
+      <div className="absolute z-10 lg:z-30 pt-3 lg:p-6">
         <SwitchLocale dict={dict} />
       </div>
 
       <section
-        className="blurry-circle relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky after:to-green-900 after:blur-2xl after:content-[''] before:bg-gradient-to-br before:to-blue-900 before:opacity-10 after:from-sky-900 after:via-[#01ff81] before:from-[#00418848] before:via-[#0161ff] after:opacity-40 before:lg:h-[360px]">
+        className="blurry-circle relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:blur-2xl before:content-[''] after:absolute after:-z-30 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky after:to-green-900 after:blur-2xl after:content-[''] before:bg-gradient-to-br before:to-blue-900 before:opacity-10 after:from-sky-900 after:via-[#01ff81] before:from-[#00418848] before:via-[#0161ff] after:opacity-40 before:lg:h-[360px]">
         <Image
           className="relative drop-shadow-[0_0_0.3rem_#ffffff70]"
           src="/img/KeybotoDev.svg"

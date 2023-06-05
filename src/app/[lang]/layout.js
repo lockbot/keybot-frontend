@@ -1,4 +1,4 @@
-import '/src/app/[lang]/globals.css'
+import '/src/app/globals.css'
 import { Inter } from 'next/font/google'
 import {i18n} from "/src/i18n-config";
 
