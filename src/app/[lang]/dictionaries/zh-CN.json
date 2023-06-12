@@ -1,7 +1,11 @@
 {
   "lang": "zh-CN",
   "flag": "CN",
-  "resume": "/files/resume/RESUME_LucasBorges",
+  "resume_dir": "/files/resume/",
+  "resume": "RESUME_LucasBorges",
+  "cv_dir": "/files/resume/cs/",
+  "cv": "CV_LucasBorgesVieira",
+  "blog": "https://blog.keybot.dev.br",
   "top_labels": {
     "lang": "语言",
     "where": "你在"
@@ -32,6 +36,13 @@
       "name2": "简历",
       "message": "下载我的",
       "download": "下载"
+    },
+    "blog": {
+      "name": "博客"
+    },
+    "mail": {
+      "name": "邮件",
+      "message": "联系我"
     }
   }
 }

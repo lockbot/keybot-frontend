@@ -89,19 +89,19 @@ export default async function Home({params: {lang}}) {
         </a>
 
         <a
-          href="https://keybotodev.wordpress.com/"
+          href={dict.blog}
           className="group rounded-lg border border-transparent px-5 py-4 transition-color hover:border-neutral-700 hover:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Blog{' '}
+            {dict.main_button.blog.name}{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Blog.
+            {dict.main_button.blog.name}.
           </p>
         </a>
 
@@ -136,6 +136,23 @@ export default async function Home({params: {lang}}) {
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             {dict.main_button.gitlab.message} {dict.main_button.gitlab.name2}.
+          </p>
+        </a>
+
+        <a
+          href="mailto:mail.keybot@gmail.com"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-color hover:border-neutral-700 hover:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            {dict.main_button.mail.name}{' '}
+            <span className="inline-block transition-transform group-hover:-translate-y-1 motion-reduce:transform-none">
+              &#9998;
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            {dict.main_button.mail.message}.
           </p>
         </a>
 

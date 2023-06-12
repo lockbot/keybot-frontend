@@ -1,7 +1,11 @@
 {
   "lang": "ko-KR",
   "flag": "KR",
-  "resume": "/files/resume/RESUME_LucasBorges",
+  "resume_dir": "/files/resume/",
+  "resume": "RESUME_LucasBorges",
+  "cv_dir": "/files/resume/cs/",
+  "cv": "CV_LucasBorgesVieira",
+  "blog": "https://blog.keybot.dev.br",
   "top_labels": {
     "lang": "언어",
     "where": "현재 위치"
@@ -32,6 +36,13 @@
       "name2": "이력서",
       "message": "이력서 다운로드",
       "download": "다운로드"
+    },
+    "blog": {
+      "name": "블로그"
+    },
+    "mail": {
+      "name": "메일",
+      "message": "연락하기"
     }
   }
 }

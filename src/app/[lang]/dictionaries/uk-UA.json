@@ -1,7 +1,11 @@
 {
   "lang": "uk-UA",
   "flag": "UA",
-  "resume": "/files/resume/RESUME_LucasBorges",
+  "resume_dir": "/files/resume/",
+  "resume": "RESUME_LucasBorges",
+  "cv_dir": "/files/resume/cs/",
+  "cv": "CV_LucasBorgesVieira",
+  "blog": "https://blog.keybot.dev.br",
   "top_labels": {
     "lang": "мова",
     "where": "Ви знаходитесь на"
@@ -32,6 +36,13 @@
       "name2": "резюме",
       "message": "Завантажити моє",
       "download": "Завантажити"
+    },
+    "blog": {
+      "name": "Блог"
+    },
+    "mail": {
+      "name": "Пошта",
+      "message": "Зв'яжіться зі мною"
     }
   }
 }

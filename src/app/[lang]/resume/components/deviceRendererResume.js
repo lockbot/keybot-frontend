@@ -42,7 +42,7 @@ export function RenderResumeBasedOnDevice({dict}) {
           <div className="overflow-x-scroll mt-8 -mx-24 rounded-xl border-gray-500 shadow-lg">
             <object
               type="text/html"
-              data={dict.resume+".html"}
+              data={dict.resume_dir+dict.resume+".html"}
               width={850}
               height={1016}
             />
@@ -51,8 +51,8 @@ export function RenderResumeBasedOnDevice({dict}) {
 
         <section className="mt-8 mb-32 grid text-center lg:mb-0 lg:grid-cols-2 lg:text-left">
           <a
-            href={dict.resume}
-            download='RESUME_LucasBorges'
+            href={dict.resume_dir+dict.resume}
+            download={dict.resume}
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>
@@ -71,7 +71,7 @@ export function RenderResumeBasedOnDevice({dict}) {
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>
-              <span className="inline-block transition-transform group-hover:translate-x--1 motion-reduce:transform-none">
+              <span className="inline-block transition-transform group-hover:-translate-x-1 motion-reduce:transform-none">
                   &lt;-
               </span>
               {' '}{dict.main_button.back_home.name1}
@@ -114,7 +114,7 @@ export function RenderResumeBasedOnDevice({dict}) {
           <div className="overflow-x-scroll lg:overflow-x-clip mt-8 -mx-24 lg:border lg:mx-0 border-neutral-800 shadow-lg">
             <iframe
               className="rounded-xl"
-              src={dict.resume+".pdf"}
+              src={dict.resume_dir+dict.resume+".pdf"}
               width={1050}
               height={1376}
             />
@@ -123,8 +123,8 @@ export function RenderResumeBasedOnDevice({dict}) {
 
         <section className="mt-8 mb-32 grid text-center lg:mb-0 lg:grid-cols-2 lg:text-left">
           <a
-            href={dict.resume}
-            download='RESUME_LucasBorges'
+            href={dict.resume_dir+dict.resume}
+            download={dict.resume}
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>
@@ -143,7 +143,7 @@ export function RenderResumeBasedOnDevice({dict}) {
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
           >
             <h2 className={`mb-3 text-2xl font-semibold`}>
-              <span className="inline-block transition-transform group-hover:translate-x--1 motion-reduce:transform-none">
+              <span className="inline-block transition-transform group-hover:-translate-x-1 motion-reduce:transform-none">
                   &lt;-
               </span>
               {' '}{dict.main_button.back_home.name1}

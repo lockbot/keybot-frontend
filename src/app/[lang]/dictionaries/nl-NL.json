@@ -1,7 +1,11 @@
 {
   "lang": "nl-NL",
   "flag": "NL",
-  "resume": "/files/resume/RESUME_LucasBorges",
+  "resume_dir": "/files/resume/",
+  "resume": "RESUME_LucasBorges",
+  "cv_dir": "/files/resume/cs/",
+  "cv": "CV_LucasBorgesVieira",
+  "blog": "https://blog.keybot.dev.br",
   "top_labels": {
     "lang": "taal",
     "where": "Je bent op"
@@ -32,6 +36,13 @@
       "name2": "cv",
       "message": "Download mijn",
       "download": "Download"
+    },
+    "blog": {
+      "name": "Blog"
+    },
+    "mail": {
+      "name": "Mail",
+      "message": "Neem contact op"
     }
   }
 }

@@ -1,7 +1,11 @@
 {
   "lang": "fr-FR",
   "flag": "FR",
-  "resume": "/files/resume/RESUME_LucasBorges",
+  "resume_dir": "/files/resume/",
+  "resume": "RESUME_LucasBorges",
+  "cv_dir": "/files/resume/cs/",
+  "cv": "CV_LucasBorgesVieira",
+  "blog": "https://blog.keybot.dev.br",
   "top_labels": {
     "lang": "langue",
     "where": "Vous êtes en"
@@ -32,6 +36,13 @@
       "name2": "curriculum vitae",
       "message": "Téléchargez mon",
       "download": "Télécharger"
+    },
+    "blog": {
+      "name": "Blog"
+    },
+    "mail": {
+      "name": "Mail",
+      "message": "Entrer en contact"
     }
   }
 }
