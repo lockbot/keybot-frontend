@@ -50,7 +50,7 @@ export function RenderSociologiaBasedOnDevice({dict}) {
 
         <section className="mt-8 mb-32 grid text-center lg:mb-0 lg:grid-cols-1 lg:text-left">
           <a
-            href={dict.cv_dir+dict.cv}
+            href={dict.cv_dir+dict.cv+".pdf"}
             download={dict.cv}
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
           >
@@ -107,7 +107,7 @@ export function RenderSociologiaBasedOnDevice({dict}) {
 
         <section className="mt-8 mb-32 grid text-center lg:mb-0 lg:grid-cols-2 lg:text-left">
           <a
-            href={dict.cv_dir+dict.cv}
+            href={dict.cv_dir+dict.cv+".pdf"}
             download={dict.cv}
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
           >
